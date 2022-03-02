@@ -34,6 +34,18 @@ int main()
     printf("\nYou entered : "); // You entered : h
     putchar(c);
   
+  // array
+    int n[10]; // size
+    int i, j ,num;
+    printf("Enter a number : \n");
+    for(i = 0; i<10; i++){
+        scanf("%d",&n[i]);
+    }
+    for (j = 0; j< 4;j++)
+    {
+        printf("Element [%d] = %d\n", j, n[j]);
+    }
+  
   
   
 }

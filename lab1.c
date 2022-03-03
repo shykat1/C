@@ -3,6 +3,7 @@ int main()
   // how to print
   printf("hello world. Silent, powerful, execution\n");
   
+  
   // variable definition
     int a, b;
     int c;
@@ -12,12 +13,16 @@ int main()
     c= a+b;
     printf("Integer printed like this: %d", c);
   
+  
+  
   // float
     f= 10;
     printf("float number prints like this : %f, ",f);
   
+  
   // multiple print
     printf("multiple prints like this : %f %d, ", f, c); // float number prints like this : 10.000000, multiple prints like this : 10.000000 20,
+  
 
   // taking inputs
     char str[100];
@@ -34,6 +39,7 @@ int main()
     printf("\nYou entered : "); // You entered : h
     putchar(c);
   
+  
   // array
     int n[10]; // size
     int i, j ,num;
@@ -46,6 +52,35 @@ int main()
         printf("Element [%d] = %d\n", j, n[j]);
     }
   
+ 
+  // pointer
+  int var = 20; // variable of type int 
+   int *ip;// pointer declaration, it can store the address of an integer
+   printf("Address of pointer  :  %x\n", ip);
+
+   ip =  &var;// stores the address of variabl 'var' in pointer ip
+   // ip > is the address || *p value at the address. || access value of > *p = 10[will change it]
+
+   printf("Varibale : %d\n",var);
+   printf("pointer address :  %x\n", ip);
+   printf("also gives the adress of pointer it points to :  %x\n", &var);
+
+   printf("p ip is also a variable and it store at :  %x\n", &ip);
+
+   printf("prints the value it pointed to > %d",*ip);
+   /*
+Address of pointer  :  316000
+Varibale : 20
+pointer address :  61ff2c
+also gives the adress of pointer it points to :  61ff2c
+p ip is also a variable and it store at :  61ff28
+prints the value it pointed to > 20
+   */
   
+  // string
+  char greeting[6] = {'H','o','l','o'};
+   printf("Greeting message: %s",greeting);
+
+
   
 }

@@ -34,7 +34,7 @@ int a = 0;
 for (int a = 5; a >; a++)
    {
       printf("%d\n", a);
-      printf("5 times \n")'
+      printf("5 times \n");
    }
 for (int a = 5; a > 0; a--) // a= a-1
    {

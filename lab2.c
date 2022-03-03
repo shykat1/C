@@ -72,3 +72,36 @@ int max (int value1 , int value2){ // int return type
    }
    return finalResult;
 }
+
+
+// call by name and call by value
+#include <stdio.h>
+int call_by_val(int a, int b);
+int call_by_ref(int *pos_a, int *pos_b);
+
+int max(int value1, int value2); // function declaration
+int main()
+{
+   int a = 10;
+   int b = 20;
+
+   call_by_val(a,b);
+   printf("Call By value");
+   printf("%d\n", a);
+   printf("%d", b);
+
+   call_by_ref(&a, &b); // addresses of this variables. &x means addrsss of x.  &a means refrencing
+   printf("Call By Reference");
+   printf("%d\n", a);
+   printf("%d", b);
+
+   return 0;
+}
+int call_by_val (int a , int b){
+   a = 20;// accessing the content of that variable 
+   b = 10;
+}
+int call_by_ref(int *ptr_a, int *ptr_b){ // we use pointers. because pointers can hold addreses. 
+   *ptr_a = 20; // ptr_a holds the adress of variable a. using we access the value of that particular address. derefrencing
+   *ptr_b = 10; // ptr_b holds the adress of variable b
+}
